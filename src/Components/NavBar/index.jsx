@@ -1,5 +1,9 @@
 import { Text } from "@mantine/core";
 import logo from "../../assets/logo.svg";
+import tclogo from "../../assets/tc.svg";
+import scient from "../../assets/scient.png";
+import nittlogo from "../../assets/nittlogo.png";
+import "./index.css";
 import {
 	Burger,
 	Container,
@@ -9,6 +13,7 @@ import {
 	Paper,
 	Transition,
 } from "@mantine/core";
+
 import { useDisclosure } from "@mantine/hooks";
 import { useState } from "react";
 import {motion} from "framer-motion";
@@ -124,10 +129,18 @@ const NavBar = () => {
 						"@media (max-width: 900px)": {
 							fontSize: theme.fontSizes.lg,
 							margin: "0rem",
-						},
+						}, 
 					})}
 				>
-					<motion.img src={logo} drag dragConstraints = {{left : 0, right : 0, top : 0, bottom : 0}} dragElastic = {1} transition = {{duration : 0.5}}></motion.img>
+				<div style={{display : "flex", alignItems : "center", justifyContent : "center"}}>
+					<motion.img src={nittlogo} drag dragConstraints = {{left : 0, right : 0, top : 0, bottom : 0}} dragElastic = {1} transition = {{duration : 0.5}} className="logos"></motion.img>
+					<motion.img src={tclogo} drag dragConstraints = {{left : 0, right : 0, top : 0, bottom : 0}} dragElastic = {1} transition = {{duration : 0.5}} className="logos"></motion.img>
+					<motion.img src={scient} drag dragConstraints = {{left : 0, right : 0, top : 0, bottom : 0}} dragElastic = {1} transition = {{duration : 0.5}} className="logos"></motion.img>
+					<motion.img src={logo} drag dragConstraints = {{left : 0, right : 0, top : 0, bottom : 0}} dragElastic = {1} transition = {{duration : 0.5}} className="logos"></motion.img>
+
+				</div>
+					
+
 				</Text>
 				<Group
 					spacing={2}
