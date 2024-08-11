@@ -6,6 +6,7 @@ import tezos from "../../assets/tezos.png";
 import netcon from "../../assets/netcon.png";
 import abhibus from "../../assets/abhibus.png";
 import pathway from "../../assets/pathway2.png";
+import bharathx from "../../assets/bharatX.svg";
 
 import { motion } from "framer-motion";
 import "./sponsors.css";
@@ -113,6 +114,18 @@ const Sponsors = () => {
                 >
                   <motion.img
                     src={crewsphere}
+                    initial={{ transform: "rotateZ(90deg)" }}
+                    viewport={{ once: true }}
+                    whileInView={{ transform: "rotateX(0)" }}
+                    transition={{ duration: 0.5 }}
+                  ></motion.img>
+                </div>
+                <div
+                  style={{ width: "fit-content", display: "inline-block" }}
+                  className="block"
+                >
+                  <motion.img
+                    src={bharathx}
                     initial={{ transform: "rotateZ(90deg)" }}
                     viewport={{ once: true }}
                     whileInView={{ transform: "rotateX(0)" }}

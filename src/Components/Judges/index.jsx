@@ -10,6 +10,7 @@ import subash from "../../assets/subash.jpg";
 // import ram from "../../assets/Ram.jpg";
 import adwaith from "../../assets/adwaith.jpeg";
 import ramshreewath from "../../assets/RamShreewath.jpeg";
+import mudit from "../../assets/mudit.jpeg";
 
 import { motion } from "framer-motion";
 
@@ -153,6 +154,22 @@ const Judges = () => {
                 <div className="place">Analyst at Goldman Sachs</div>
               </div>
               <img src={subash} alt="logo" />
+            </motion.div>
+          </div>
+          <div className="inlineBlock">
+            <motion.div
+              className="judge"
+              initial={{ transform: "scale(0.5)" }}
+              viewport={{ once: true }}
+              whileInView={{ transform: "scale(1)" }}
+              transition={{ delay: 0.7 }}
+            >
+              <div className="info">
+                <div className="designation">SOFTWARE</div>
+                <div className="title">Mudit Srivastva.</div>
+                <div className="place">Growth Manager, Pathway</div>
+              </div>
+              <img src={mudit} alt="logo" />
             </motion.div>
           </div>
         </div>

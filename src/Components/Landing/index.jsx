@@ -18,10 +18,10 @@ const Landing = () => {
     const currentTime = new Date().getTime();
     const time = deadline - currentTime;
 
-    setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
-    setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
-    setMinutes(Math.floor((time / (1000 * 60)) % 60));
-    setSeconds(Math.floor((time / 1000) % 60));
+    setDays(0);
+    setHours(0);
+    setMinutes(0);
+    setSeconds(0);
   };
 
   useEffect(() => {
@@ -43,11 +43,11 @@ const Landing = () => {
         <h1>TRANSFINITTE</h1>
         <h2>Innovation Knows No Bounds</h2>
         <div className="buttonHolder">
-          <button id="regbtn" onClick={() => {window.location.href = "/register"}}>REGISTER NOW</button>
-          <button id="archbtn" onClick={() => {window.open(
-  'https://drive.google.com/file/d/1PcIjK3qWJYjgxCiBnXAnTdjH5rwDA2KU/view?usp=sharing',
+          {/* <button id="regbtn" onClick={() => {window.location.href = "/register"}}>REGISTER NOW</button> */}
+          <button id="regbtn" onClick={() => {window.open(
+  'https://drive.google.com/file/d/1jjjwgRhEHz8pLegoh0GjU5KTq7Ni5zAs/view',
   '_blank' // <- This is what makes it open in a new window.
-);}}>2022 ARCHIVE</button>
+);}}>Problem Statements</button>
         </div>
       </div>
       <motion.div className="timer" initial={{opacity : 0, transform : "scale(0.1)"}} animate ={{opacity : 1, transform : "scale(1)"}} transition={{duration : 1, delay : 1}}>
